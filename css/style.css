@@ -110,7 +110,7 @@ header
     height: 600px;
     width: 400px;
     border-radius: 100px;
-    box-shadow: 3px 4px 5px 6px rgba(195, 179, 179, 0.03);
+    box-shadow: 0 0 20px rgba(241, 227, 227, 0.09);
 }
 
 .about-text{
@@ -160,6 +160,36 @@ button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
+}
+#personalDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 12%;
+}
+#personalDescription table{
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+.table-name{
+    background-color: #213645;
+    color: #ffffff;
+}
+.raw-name{
+    background-color: #202125;
+}
+table th,
+table td {
+    padding: 12px 15px;
+}
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #213645;
 }
 @media (max-width: 1460px){
     header{
