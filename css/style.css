@@ -98,11 +98,15 @@ header
     z-index: 10001;
     display: none;
 }
-.about{
-    z-index: 100;
-    padding-top: 100px;
+.section{
     background-color: #222327;
     box-shadow: 0 15px  5px rgba(0,0,0,0.05);
+}
+#about{
+    padding-top: 100px;
+}
+#about section:nth-child(2){
+    padding: 0;
 }
 #gojoImg img {
     object-fit: cover;
@@ -116,7 +120,7 @@ header
 .about-text{
     width: auto;
 }
-#mainInfo{
+.mainInfo{
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
@@ -140,7 +144,7 @@ header
     margin-bottom: 25px;
 }
 .about-text p{
-    color: #fcfc;
+    color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -160,6 +164,14 @@ button:hover{
     background-color: transparent;
     border: 2px solid #f9004d;
     cursor: pointer;
+}
+.right-img  {
+    float: right;
+    margin: 8px 10px 8px 8px;
+}
+.left-img {
+    float:left;
+    margin: 10px 10px 10px 0;
 }
 #personalDescription{
     display: flex;
@@ -203,7 +215,7 @@ table tbody tr:last-of-type {
         padding: 5px 0;
         margin: 0 20px;
     }
-    #mainInfo{
+    .mainInfo{
         padding: 14px 2%;
         transition: .2s;
     }
@@ -247,16 +259,13 @@ table tbody tr:last-of-type {
     .burger a{
         padding: 10px 25px ;
     }
-    .about{
-
-    }
-
 }
 @media (max-width: 952px) {
+
     #gojoImg img {
         margin-right: 0;
     }
-    #mainInfo{
+    .mainInfo{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -265,14 +274,12 @@ table tbody tr:last-of-type {
         transition: .2s;
     }
     .about-text h2{
-        text-align: center;
         font-size: 40px;
         margin-top: 40px;
         margin-bottom: 20px;
         transition: .3s;
     }
     .about-text h5{
-        text-align: center;
         letter-spacing: 2px;
         font-size: 22px;
     }
@@ -290,6 +297,9 @@ table tbody tr:last-of-type {
     }
 }
 @media (max-width: 500px) {
+    .right-img{
+        float: left;
+    }
     .about-text h2{
         font-size: 32px;
     }
