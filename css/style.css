@@ -33,6 +33,7 @@ header
     transition: all .50s ease;
     box-shadow: 0 15px 5px rgba(0,0,0,0.05);
 }
+
 .logo
 {
     display: flex;
@@ -100,7 +101,6 @@ header
 }
 .section{
     background-color: #222327;
-    box-shadow: 0 15px  5px rgba(0,0,0,0.05);
 }
 #about{
     padding-top: 100px;
@@ -108,7 +108,7 @@ header
 #about section:nth-child(2){
     padding: 0;
 }
-#gojoImg img {
+#profile-image img {
     object-fit: cover;
     margin-right: 60px;
     height: 600px;
@@ -120,7 +120,7 @@ header
 .about-text{
     width: auto;
 }
-.mainInfo{
+.main-information{
     width: 100%;
     max-width: 95%;
     margin: 0 auto;
@@ -173,14 +173,14 @@ button:hover{
     float:left;
     margin: 10px 10px 10px 0;
 }
-#personalDescription{
+#personal-description{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 12%;
+    padding: 20px 13%;
     transition: all .50s ease;
 }
-#personalDescription table{
+#personal-description table{
     margin: 25px 0;
     font-size: 16px;
     font-family: sans-serif;
@@ -200,11 +200,66 @@ table th,
 table td {
     padding: 12px 15px;
 }
-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
+/*table tbody tr {*/
+/*    border-bottom: 1px solid #dddddd;*/
+/*}*/
 table tbody tr:last-of-type {
     border-bottom: 2px solid #213645;
+}
+#abilities{
+    background: #5188b0;
+}
+#abilities img{
+    border-radius: 15px;
+}
+footer {
+    width: 100%;
+    padding:20px 12%;
+    color: var(--text-color);
+    background-color: #272b31;
+}
+footer h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    transition: all .50s ease;
+}
+
+footer .item.text {
+    margin-bottom:36px;
+}
+
+footer .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+}
+footer .item.social {
+    text-align:center;
+}
+
+footer .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+}
+footer .item.social > a:hover {
+    opacity:0.9;
+}
+footer .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
 }
 @media (max-width: 1460px){
     header{
@@ -215,15 +270,20 @@ table tbody tr:last-of-type {
         padding: 5px 0;
         margin: 0 20px;
     }
-    .mainInfo{
+    .main-information{
         padding: 14px 2%;
         transition: .2s;
     }
-    #personalDescription{
-        padding: 20px 2%;
+    #personal-description{
+        padding: 20px 4%;
+        transition: .2s;
+    }
+    footer{
+        padding: 20px 4%;
         transition: .2s;
     }
 }
+
 @media (max-width: 1090px){
     #menu-icon{
         display: block;
@@ -259,13 +319,17 @@ table tbody tr:last-of-type {
     .burger a{
         padding: 10px 25px ;
     }
+    footer{
+        padding: 20px 2%;
+        transition: .2s;
+    }
 }
 @media (max-width: 952px) {
 
-    #gojoImg img {
+    #profile-image img {
         margin-right: 0;
     }
-    .mainInfo{
+    .main-information{
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -294,6 +358,19 @@ table tbody tr:last-of-type {
         background-color: transparent;
         border: 2px solid #f9004d;
         cursor: pointer;
+    }
+    footer .item.social {
+        text-align:center;
+        margin-top:20px;
+    }
+}
+@media (max-width:767px) {
+    footer .item.text {
+        margin-bottom:0;
+    }
+    footer .item:not(.social) {
+        text-align:center;
+        padding-bottom:20px;
     }
 }
 @media (max-width: 500px) {

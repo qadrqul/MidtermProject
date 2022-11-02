@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-device, initial-scale=1">
     <title>Satoru Gojo</title>
     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="stylesheet"
           href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
     <script src="js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet"
           href="css/style.css">
 </head>
@@ -24,7 +30,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About me</a></li>
         <li><a href="#">Biography</a></li>
-        <li><a href="#">Jujutsu</a></li>
+        <li><a href="#">Quotes</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
     <div class="burger">
@@ -35,9 +41,9 @@
 <main>
     <div id="about">
         <div class="section">
-            <div class="mainInfo">
-                <div id="gojoImg">
-                    <img src="images/gojo.png" alt="gojo">
+            <div class="main-information">
+                <div id="profile-image">
+                    <img src="images/profile.png" alt="Gojo">
                 </div>
                 <div class="about-text">
                     <h2>About Me</h2>
@@ -47,12 +53,12 @@
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button type="button" >Let's Talk</button>
+                    <button onclick="location.href = 'https://t.me/universe_mk';" type="button" >Let's Talk</button>
                 </div>
             </div>
         </div>
         <div class="section">
-            <div id="personalDescription">
+            <div id="personal-description">
                 <table>
                     <tbody>
                     <tr class="table-name">
@@ -109,7 +115,7 @@
     </div>
     <div id="abilities">
         <div class="section">
-            <div class="mainInfo">
+            <div class="main-information">
             <div class="about-text">
                 <h2>Biography</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -128,22 +134,40 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-                <p><img src="images/Satoru_Gojo_targets_weakened_Hanami.webp" alt="fight-2" class="left-img" width="320" height="180">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <p><img src="images/Satoru_Gojo_arrives_on_the_battlefield_Anime.webp" alt="fight-2" class="left-img" width="320" height="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    voluptate velit esse cillum dolore eu fugiat nulla.
                 </p>
             </div>
             </div>
         </div>
     </div>
+    <div id="gojo-quotes">
+        <div class="section">
+
+        </div>
+    </div>
 </main>
 <footer>
-
+    <div class="footer">
+            <div>
+                    <div class="flex-column item text text-center">
+                        <h3>Kadyrmamat Momunov</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-github"></i></a>
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+                <p class="copyright">Kadyrmamat Momunov © 2022</p>
+            </div>
+    </div>
 </footer>
 </body>
 </html>
