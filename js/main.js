@@ -31,4 +31,5 @@ button.addEventListener("click", (where, element) => {
     else {
         image.innerHTML = `<img src="/images/Satoru_Gojo.webp" alt="photo"/>`;
     }
+//    for commit
 })
