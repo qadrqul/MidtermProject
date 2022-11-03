@@ -8,7 +8,7 @@ menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navbar.classList.toggle('open');
 }
-image.innerHTML = `<img src="../images/Satoru_Gojo.webp" alt="photo"/>`;
+image.innerHTML = `<img src="images/Satoru_Gojo.webp" alt="photo"/>`;
 fetch("https://animechan.vercel.app/api/random/character?name=saitama")
     .then(response => response.json())
     .then(quote => {
