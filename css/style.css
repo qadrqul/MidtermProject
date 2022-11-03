@@ -236,8 +236,6 @@ q::after {
     border-radius: 40px;
     background: #3f6b8b;
 }
-.quote-img{
-}
 .gojo-quotes{
     display: flex;
     flex-direction: column;
@@ -448,8 +446,5 @@ footer .copyright {
     }
     .gojo-quotes{
         padding-right: 0;
-    }
-    .quote{
-
     }
 }
