@@ -26,10 +26,10 @@ button.addEventListener("click", (where, element) => {
             gojosQuote.innerHTML=quote.quote;
         });
     if(clicks===5 || clicks===10 || clicks===50 || clicks===100){
-        image.innerHTML = `<img src="/images/Agay.webp" alt="photo"/>`;
+        image.innerHTML = `<img src="images/Agay.webp" alt="photo"/>`;
     }
     else {
-        image.innerHTML = `<img src="/images/Satoru_Gojo.webp" alt="photo"/>`;
+        image.innerHTML = `<img src="images/Satoru_Gojo.webp" alt="photo"/>`;
     }
 //    for commit -->
 })
