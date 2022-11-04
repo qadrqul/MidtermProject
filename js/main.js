@@ -9,7 +9,7 @@ menu.onclick = () => {
     navbar.classList.toggle('open');
 }
 image.innerHTML = `<img src="images/Satoru_Gojo.webp" alt="photo"/>`;
-fetch("https://animechan.vercel.app/api/random/character?name=saitama")
+fetch("https://animechan.vercel.app/api/random/character?name=satoru")
     .then(response => response.json())
     .then(quote => {
         gojosQuote.innerHTML=quote.quote;
@@ -20,7 +20,7 @@ button.addEventListener("click", (where, element) => {
     let color = "#";
     color += Math.random().toString(16).slice(2,8);
     button.style.background = color;
-    fetch("https://animechan.vercel.app/api/random/character?name=saitama")
+    fetch("https://animechan.vercel.app/api/random/character?name=satoru")
         .then(response => response.json())
         .then(quote => {
             gojosQuote.innerHTML=quote.quote;
